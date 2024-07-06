@@ -1,14 +1,35 @@
+﻿"""Module for fetching GitHub user statistics."""
+
 from datetime import datetime
+from typing import Dict
 from github import Github
 from github.GithubException import GithubException
 from .exceptions import APIError
 
 class GitHubStats:
+    """Class to fetch GitHub user statistics."""
+
     def __init__(self, token: str, username: str):
+        """
+        Initialize GitHubStats.
+
+        Args:
+            token (str): GitHub API token.
+            username (str): GitHub username.
+        """
         self.g = Github(token)
         self.username = username
 
-    def get_stats(self) -> dict:
+    def get_stats(self) -> Dict[str, int]:
+        """
+        Fetch GitHub statistics for the user.
+
+        Returns:
+            Dict[str, int]: Dictionary containing user statistics.
+
+        Raises:
+            APIError: If there's an error fetching data from GitHub API.
+        """
         try:
             user = self.g.get_user(self.username)
             account_age = (datetime.now() - user.created_at).days // 365
