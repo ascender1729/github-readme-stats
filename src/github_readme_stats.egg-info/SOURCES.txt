@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/github_readme_stats/__init__.py
+src/github_readme_stats/exceptions.py
+src/github_readme_stats/github_stats.py
+src/github_readme_stats/readme_updater.py
+src/github_readme_stats.egg-info/PKG-INFO
+src/github_readme_stats.egg-info/SOURCES.txt
+src/github_readme_stats.egg-info/dependency_links.txt
+src/github_readme_stats.egg-info/requires.txt
+src/github_readme_stats.egg-info/top_level.txt
+tests/test_github_stats.py
