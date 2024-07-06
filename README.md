@@ -42,6 +42,16 @@ updater.update(user_stats)
 
 3. Include a `<!-- GITHUB_STATS -->` placeholder in your README where you want the stats to appear.
 
+## Changelog
+
+### [0.1.0] - 2023-07-06
+
+#### Added
+- Initial release of github-readme-stats
+- Functionality to fetch basic GitHub user statistics
+- README updater to automatically insert stats into README files
+- Basic error handling and exceptions
+
 ## Future Features (Roadmap for Version 0.2.0)
 
 We're planning to add the following features in the next version:
